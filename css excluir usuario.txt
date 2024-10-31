@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url("");
+    background-size: cover;
+    color: #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 30px;
+    padding: 32px;
+    width: 1180px;
+    height: 98px;
+    border-radius: 10px;
+    background: #12130F;
+    display: flex;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    width: 100%;
+}
+
+header .container #logo {
+    width: 155px;
+    height: 42.913px;
+}
+
+header .container nav {
+    display: flex;
+    color: aliceblue;
+}
+
+header .container nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header .container nav ul a {
+    text-decoration: none;
+}
+
+header .container nav ul a li {
+    margin-left: 31px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+header .container nav ul li:hover {
+    transform: scale(1.05);
+    transition: 0.1s linear;
+}
+
+header .container nav ul a li#li-conta {
+    text-decoration: 2px underline #00ff00;
+    text-underline-offset: 3.5px;
+}
+
+header .container .img-profile {
+    position: relative;
+    z-index: 2;
+    margin-right: 43px;
+}
+
+header .container .img-profile #profile {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+header .container .dropdown {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 8px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    right: 26px;
+    top: 16px;
+    background: #12130F;
+    z-index: 1;
+    padding-top: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+}
+
+header .container .dropdown.show {
+    opacity: 1;
+    max-height: 200px;
+}
+
+header .container .dropdown .user .informations {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .container .dropdown .user .informations p {
+    width: 100%;
+    text-align: center;
+}
+
+header .container .dropdown .user .informations p u#name {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+header .container .dropdown .user .informations p u#email {
+    color: #fff;
+    font-size: 0.60rem;
+    margin-top: 7px;
+    width: 100%;
+}
+
+header .container .dropdown .user .infos {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 18px;
+    border-top: 1px solid #fff;
+    margin: 16px 0;
+    padding-left: 8px;
+}
+
+header .container .dropdown .user .infos a {
+    text-decoration: none;
+}
+
+header .container .dropdown .user .infos p {
+    text-align: start;
+    display: flex;
+    margin-top: 12px;
+}
+
+header .container .dropdown .user .infos p#config {
+    color: aliceblue;
+}
+
+header .container .dropdown .user .infos p#logout {
+    margin-left: 4px;
+    color: rgba(255, 0, 0, 0.705);
+}
+
+.container-main {
+    max-width: 1100px;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #1c1c1e;
+    border-radius: 10px;
+    pa
